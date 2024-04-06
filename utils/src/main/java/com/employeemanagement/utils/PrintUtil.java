@@ -1,11 +1,11 @@
-package com.employeemanagement.app;
+package com.employeemanagement.utils;
 
 import java.util.List;
 
 import com.employeemanagement.core.Employee;
 
 public class PrintUtil {
-    static void printEmployeeList(List<Employee> employeeList) {
+    public static void printEmployeeList(List<Employee> employeeList) {
         for (Employee employee : employeeList) {
             System.out.println("Имя: " + employee.getName());
             System.out.println("Возраст: " + employee.getAge());
