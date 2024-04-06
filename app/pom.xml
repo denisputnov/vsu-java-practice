@@ -52,7 +52,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.employeemanagement.Main</mainClass>
+                            <mainClass>com.employeemanagement.app.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
