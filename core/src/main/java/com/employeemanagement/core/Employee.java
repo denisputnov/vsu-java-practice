@@ -1,4 +1,4 @@
-package com.employeemanagement;
+package com.employeemanagement.core;
 
 public class Employee extends Person {
     private final String employeeId;

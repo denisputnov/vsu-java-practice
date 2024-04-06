@@ -1,6 +1,10 @@
-package com.employeemanagement;
+package com.employeemanagement.app;
 
 import java.util.List;
+
+import com.employeemanagement.core.Address;
+import com.employeemanagement.core.Employee;
+import com.employeemanagement.core.EmployeeList;
 
 public class Main {
     public static void main(String[] args) {

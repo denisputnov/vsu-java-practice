@@ -1,4 +1,4 @@
-package com.employeemanagement;
+package com.employeemanagement.core;
 
 public class Address {
     private final String street;

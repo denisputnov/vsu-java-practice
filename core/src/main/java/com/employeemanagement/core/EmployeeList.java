@@ -1,4 +1,4 @@
-package com.employeemanagement;
+package com.employeemanagement.core;
 
 import java.util.ArrayList;
 import java.util.List;

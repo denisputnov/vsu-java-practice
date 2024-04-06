@@ -1,6 +1,8 @@
-package com.employeemanagement;
+package com.employeemanagement.app;
 
 import java.util.List;
+
+import com.employeemanagement.core.Employee;
 
 public class PrintUtil {
     static void printEmployeeList(List<Employee> employeeList) {
