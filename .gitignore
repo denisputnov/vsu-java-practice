@@ -30,3 +30,6 @@ bin/
 
 ### IDEA ###
 .idea
+
+### BUILD ###
+**/target/
