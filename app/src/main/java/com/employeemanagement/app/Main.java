@@ -27,8 +27,11 @@ public class Main {
 
         EmployeeList employeeList = new EmployeeList();
 
-        employeeList.addEmployee(employee1);
-        employeeList.addEmployee(employee2);
+        employeeList.hire(employee1);
+        employeeList.hire(employee2);
+
+        employeeList.fire("EMP1");
+
         return employeeList;
     }
 }
