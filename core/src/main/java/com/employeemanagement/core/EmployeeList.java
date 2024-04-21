@@ -10,11 +10,26 @@ public class EmployeeList {
         employees = new ArrayList<>();
     }
 
-    public void addEmployee(Employee employee) {
+    public List<Employee> getAllEmployees() {
+        return employees;
+    }
+
+    public void hire(Employee employee) {
         employees.add(employee);
     }
 
-    public List<Employee> getAllEmployees() {
-        return employees;
+    public void fire(String employeeId) {
+        Employee employeeToRemove = null;
+        for (Employee employee : employees) {
+            if (employee.getEmployeeId().equals(employeeId)) {
+                employeeToRemove = employee;
+                break;
+            }
+        }
+        if (employeeToRemove != null) {
+            employees.remove(employeeToRemove);
+        } else {
+            System.out.println("Employee with ID " + employeeId + " not found.");
+        }
     }
 }
