@@ -2,6 +2,12 @@ pipeline {
     agent any
     
     stages {
+        stage("Checkout") {
+            steps {
+                // Клонируем репозиторий Git из GitHub
+                git 'https://github.com/denisputnov/vsu-java-practice.git'
+            }
+        }
         stage("Build") {
             steps {
                 sh 'mvn clean package'
