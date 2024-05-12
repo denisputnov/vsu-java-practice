@@ -41,10 +41,10 @@ public class PrintUtilTest {
         PrintUtil.printEmployeeList(employeeList);
         String test = outContent.toString();
         // Assert
-        String expectedOutput = "Имя: Денис Путнов\r\n" +
-                                "Возраст: 22\r\n" +
-                                "Адрес: улица Пушкина, Воронеж, Россия\r\n" +
-                                "Идентификатор сотрудника: EMP1\r\n\r\n";
+        String expectedOutput = "Имя: Денис Путнов\n" +
+                                "Возраст: 22\n" +
+                                "Адрес: улица Пушкина, Воронеж, Россия\n" +
+                                "Идентификатор сотрудника: EMP1\n\n";
 
         assertEquals(expectedOutput, test);
     }
