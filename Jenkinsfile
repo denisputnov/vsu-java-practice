@@ -2,15 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage("Checkout") {
-            steps {
-                script {
-                    checkout([$class: 'GitSCM', 
-                              branches: [[name: '**']], 
-                              userRemoteConfigs: [[url: 'https://github.com/denisputnov/vsu-java-practice.git']]])
-                }
-            }
-        }
         stage("Build") {
             steps {
                 sh 'mvn clean package'
