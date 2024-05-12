@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage("Checkout") {
             steps {
-                git 'https://github.com/denisputnov/vsu-java-practice.git'
+                script {
+                    checkout([$class: 'GitSCM', 
+                              branches: [[name: '**']], 
+                              userRemoteConfigs: [[url: 'https://github.com/denisputnov/vsu-java-practice.git']]])
+                }
             }
         }
         stage("Build") {
