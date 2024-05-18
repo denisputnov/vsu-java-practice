@@ -12,6 +12,6 @@ public class Address {
     }
 
     public String getAddressDetails() {
-        return street + "; " + city + ", " + country;
+        return street + ", " + city + ", " + country;
     }
 }
